@@ -1,0 +1,64 @@
+.menu-ativar button{
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+.menu-ativar{
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 2;
+}
+.menu{
+	width: 0;
+	background-color: #172131;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	transition: 0.5s;
+	font-family: "Poppins";
+}
+.menu li{
+  padding: 1rem;
+}
+.menu a{
+	color: #dbe2eb;
+	text-decoration: none;
+	display: block;
+	transition: 0.3s;
+}
+.menu li:hover{
+	background-color: #474747;
+	transition: 0.6s;
+}
+#paginaInicial{
+	margin-top: 8vh;
+}
+.menuAberto{
+	width: 28vh;
+}
+.botao{
+	width: 30px;
+	height: 7px;
+	background-color: rgb(255, 255, 255);
+	margin: 4px 0;
+	transition: 0.4s;
+}
+.menu-ativar button:hover .botao{
+	background-color: gray;
+}
+.button-turma:hover{
+    background-color:#2f5781;
+	transition:0.5s;
+}
+.paginaAtual{
+	color: #6ca9ff;
+}
+.conteudoItem {
+	transition: 0.5s;
+}
+.centralizado {
+	margin-left: 28vh; /* Adicione um espaçamento igual à largura do menu */
+}

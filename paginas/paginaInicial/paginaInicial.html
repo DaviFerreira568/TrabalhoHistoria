@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='../../imagens/iconHistoria.png' rel='icon' type='image/x-icon' />
+        <title>História - Página Inicial</title>
+        <link rel="stylesheet" href="../../css/menuStyle.css">
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="../../css/stylePaginaInicial.css">
+    </head>
+    <body>
+        <!--Menu-->
+        <div class="menu-ativar"><!--a imagem do botao-->
+			<button id="ativar-botao">
+				<div class="botao"></div>
+				<div class="botao"></div>
+				<div class="botao"></div>
+			</button>
+		</div>
+		<div class="menu">
+			<ul type="square">
+				<li id="paginaInicial"><a href="#"><p class="paginaAtual">Página Inicial</p></a></li>
+				<hr>
+				<li><a href="ditaduraMilitar/ditaduraMilitarSemFlecha.html"><p class="">Ditadura Militar</p></a></li>
+				<hr>
+				<li><a href="getulioVargas/getulioVargasSemFlecha.html"><p class="">Getúlio Vargas</p></a></li>
+				<hr>
+				<li><a href="guerraFria/guerraFriaSemFlecha.html"><p class="">Guerra Fria</p></a></li>
+				<hr>
+                <li><a href="outros/outros.html"><p class="">Outros</p></a></li>
+				<hr>
+			</ul>
+		</div>
+        <!--Conteudo-->
+        <header>
+            <h1 class="tituloPagina conteudoItem"><a href="paginaInicialSemArte.html" class="linkTituloPagina">HISTÓRIA</a></h1>
+
+            <a href="ditaduraMilitar/ditaduraMilitar.html"><img src="../../imagens/setaProximo.png" alt="Seta Próxima Página" class="botaoVoltarProxima botaoProxima"></a>
+        </header>
+        <main style="display: flex; justify-content:center; align-items: center;">
+                <img src="../../imagens/backgroundImage.jpg" style="height: 100%; width: 100%;" id="imagemFantasma" class= "conteudoItem" alt="Imagem Feita pelas alunas do 2DSC">
+
+           <div>
+                <h2 class="subtituloIntroduçao conteudoItem">Introdução</h2>
+                <br>
+                <div class="caixaTextoIntroduçao conteudoItem">
+                   <p class="textoIntroduçao">Este site é o meu trabalho de história para o professor Ricardo. Aqui estaremos apresentando os trabalhos dos alunos das seguintes turmas do professor Ricardo: 1G, 2°ADM (Administração) e 2°DSC (Desenvolvimento De Sistemas) da Escola Estadual Pedro Macedo. Os seguintes temas serão abordados nos trabalhos dos alunos: Ditadura Militar, Getúlio Vargas, Guerra Fria e alguns trabalhos livres (Escolha do aluno).</p>
+                </div>
+                <br>
+                <div class="botaoVerNovamente conteudoItem" onclick="reverImagem();">
+                    <a href="#">Rever Arte</a>
+                </div>
+           </div>
+        </main>
+        <footer>
+            <div class="creditosCaixa">
+                <p class="footerCreditos conteudoItem">Desenvolvedor: StDoguinho </p>
+            </div>
+        </footer>
+        <!-------->
+        <script src="../../javaScript/menuJava.js"></script>
+        <script src="../../javaScript/tempoImagem.js"></script>
+    </body>
+</html>
