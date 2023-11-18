@@ -1,6 +1,4 @@
-.menu-ativar button{
-	background-color: transparent;
-	border: none;
+.menu-ativar #ativar-botao{
 	cursor: pointer;
 }
 .menu-ativar{
@@ -22,6 +20,14 @@
 }
 .menu li{
   padding: 1rem;
+}
+#ativar-botao{
+	height: 8vh;
+	width: auto;
+	transition: 0.5s
+}
+#ativar-botao:hover{
+	transform: scale(1.1);
 }
 .menu a{
 	color: #dbe2eb;
@@ -45,9 +51,6 @@
 	background-color: rgb(255, 255, 255);
 	margin: 4px 0;
 	transition: 0.4s;
-}
-.menu-ativar button:hover .botao{
-	background-color: gray;
 }
 .button-turma:hover{
     background-color:#2f5781;
