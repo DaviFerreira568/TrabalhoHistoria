@@ -1,13 +1,19 @@
-.menu-ativar #ativar-botao{
+:root {
+	font-size: 62.5%; /* 1rem = 10px */
+  }
+  
+  .menu-ativar #ativar-botao {
 	cursor: pointer;
-}
-.menu-ativar{
+  }
+  
+  .menu-ativar {
 	position: fixed;
-	top: 10px;
-	left: 10px;
+	top: 1rem;
+	left: 1rem; 
 	z-index: 2;
-}
-.menu{
+  }
+  
+  .menu {
 	width: 0;
 	background-color: #172131;
 	height: 100%;
@@ -15,53 +21,65 @@
 	top: 0;
 	left: 0;
 	overflow-x: hidden;
-	transition: 0.5s;
+	transition:  0.5s;
 	font-family: "Poppins";
-}
-.menu li{
-  padding: 1rem;
-}
-#ativar-botao{
-	height: 8vh;
+  }
+  
+  .menu li {
+	padding: 1rem;
+	font-size: 2rem;
+  }
+  
+  #ativar-botao {
+	height: 4.8rem;
 	width: auto;
-	transition: 0.5s
-}
-#ativar-botao:hover{
+	transition: 0.5s;
+  }
+  
+  #ativar-botao:hover {
 	transform: scale(1.1);
-}
-.menu a{
+  }
+  
+  .menu a {
 	color: #dbe2eb;
 	text-decoration: none;
 	display: block;
-	transition: 0.3s;
-}
-.menu li:hover{
+	transition: color 0.3s;
+  }
+  
+  .menu li:hover {
 	background-color: #474747;
-	transition: 0.6s;
-}
-#paginaInicial{
-	margin-top: 8vh;
-}
-.menuAberto{
-	width: 28vh;
-}
-.botao{
-	width: 30px;
-	height: 7px;
-	background-color: rgb(255, 255, 255);
-	margin: 4px 0;
+  }
+  
+  #paginaInicial {
+	margin-top: 7rem;
+  }
+  
+  .menuAberto {
+	width: 27rem; /* Manter valores iguais ao da classe centralizado */
+  } 
+  
+  .centralizado {
+	margin-left: 27rem; 
+  }
+  
+  .botao {
+	width: 3rem;
+	height: 3rem;
+	background-color: #fff;
+	margin: 0.4rem 0; 
 	transition: 0.4s;
-}
-.button-turma:hover{
-    background-color:#2f5781;
-	transition:0.5s;
-}
-.paginaAtual{
+  }
+  
+  .button-turma:hover {
+	background-color: #2f5781;
+  }
+  
+  .paginaAtual {
 	color: #6ca9ff;
-}
-.conteudoItem {
+  }
+  
+  .conteudoItem {
 	transition: 0.5s;
-}
-.centralizado {
-	margin-left: 28vh; /* Adicione um espaçamento igual à largura do menu */
-}
+  }
+  

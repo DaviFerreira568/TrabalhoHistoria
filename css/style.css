@@ -1,90 +1,123 @@
-*{
-    margin : 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-color: #dbe2eb;
+
+:root {
+  font-size: 62.5%;
+
+  /* Fontes */
+  --ff-titles: Arial, Helvetica, sans-serif;
+
+  /* Backgrounds */
+  --bg-primary: #dbe2eb;
+  --bg-secondary: #141D2C;
+
+  /* Textos */
+  --text-color: #dbe2eb;
+  --text-color-theme: #141D2C;
 }
-header{
-    background-color: #141d2c;
-    width : 100%;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+body {
+  background-color: var(--bg-primary);
 }
-    .tituloPagina{
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .linkTituloPagina{
-        text-decoration: none;
-        color: #dbe2eb;
-    }
-    .botaoVoltarProxima{
-        width: 7vh;
-        height: 7vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        transition: 0.3s;
-    }
-    .botaoVoltarProxima:hover{
-        transform: scale(1.1);
-        opacity: 0.9;
-    }
-        .botaoProxima{  
-            margin-top: 1.5vh;
-            margin-right: 1vh;
-        }
-        .botaoVoltar{
-            margin-top: 1.4vh;
-            margin-right: 9vh;
-        }
-main{
-    background-color: #dbe2eb;
-    width: 100%;
-    height: 87vh;
+
+header {
+  background-color: var(--bg-secondary);
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-    .temaDaPagina{
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .turmaH1{
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        color: #141D2C;
-        margin-top: 3vh;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .turmaH2Cards{
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        color: #141D2C;
-        margin-top: 1vh;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .divCentralizaConteudo{
-        display: flex; 
-        justify-content: center; 
-        align-content: center;
-    }
-footer{
-    background-color: #141d2c;
-    height: 3vh;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
+
+#imagemFantasma{
+ position: absolute;
+  width: 100vw;
+  height: 100vh;
+ 
 }
-    .creditosCaixa{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-    }
-    .footerCreditos{
-        font-family: Arial, Helvetica, sans-serif;
-        color: #dbe2eb;
-    }
+
+.tituloPagina {
+  font-family: var(--ff-titles);
+}
+
+.linkTituloPagina {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.botaoVoltarProxima {
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: 0.3s;
+}
+
+.botaoVoltarProxima:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.botaoProxima {
+  margin-top: 0.15rem;
+  margin-right: 0.1rem;
+}
+
+.botaoVoltar {
+  margin-top: 0.14rem;
+  margin-right: 0.9rem;
+}
+
+main {
+  background-color: var(--bg-primary);
+  height: 8.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.temaDaPagina,
+.turmaH1,
+.turmaH2Cards {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color: var(--text-color-theme);
+  font-size: var(--ff-titles);
+}
+
+.turmaH1 {
+  margin-top: 0.3rem;
+}
+
+.turmaH2Cards {
+  margin-top: 0.1rem;
+}
+
+.divCentralizaConteudo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+footer {
+  background-color: var(--bg-secondary);
+  height: 0.3rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.creditosCaixa {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.footerCreditos {
+  font-size: var(--ff-titles);
+  color: var(--text-color);
+}
