@@ -17,13 +17,6 @@ function removerImagem() {
     subtituloIntroduçao.style.display = 'flex';
 }
 
-function reverImagem(){
-    backgroundImage.style.display = 'flex';
-    texto.style.display = 'none';
-    botaoVerNovamente.style.display = 'none';
-    subtituloIntroduçao.style.display = 'none';
 
-    setTimeout(removerImagem, 5000);
-}
 
 setTimeout(removerImagem, 0);
