@@ -48,8 +48,8 @@ header {
 }
 
 .botaoVoltarProxima {
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   position: fixed;
   top: 0;
   right: 0;
@@ -62,13 +62,16 @@ header {
 }
 
 .botaoProxima {
-  margin-top: 0.15rem;
-  margin-right: 0.1rem;
+  margin-top: 4rem;
+  margin-right: 5rem;
 }
 
 .botaoVoltar {
-  margin-top: 0.14rem;
-  margin-right: 0.9rem;
+  margin-top: 4rem;
+  margin-left: 5rem;
+  position:fixed;
+  left: 0;
+  top: 0;
 }
 
 main {
