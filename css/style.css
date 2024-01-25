@@ -30,12 +30,11 @@ header {
   justify-content: center;
 }
 
-#imagemFantasma{
- position: absolute;
+#imagemFantasma {
+  position: absolute;
   width: 100vw;
   height: 100vh;
   display: none;
- 
 }
 
 .tituloPagina {
@@ -45,6 +44,8 @@ header {
 .linkTituloPagina {
   text-decoration: none;
   color: var(--text-color);
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .botaoVoltarProxima {
@@ -63,13 +64,13 @@ header {
 
 .botaoProxima {
   margin-top: 4rem;
-  margin-right: 5rem;
+  margin-right: 7rem;
 }
 
 .botaoVoltar {
   margin-top: 4rem;
-  margin-left: 5rem;
-  position:fixed;
+  margin-left: 7rem;
+  position: fixed;
   left: 0;
   top: 0;
 }
@@ -77,51 +78,36 @@ header {
 main {
   background-color: var(--bg-primary);
   height: 8.7rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 33rem;
 }
 
 .temaDaPagina,
 .turmaH1,
 .turmaH2Cards {
-  display: flex;
-  align-content: center;
-  justify-content: center;
   color: var(--text-color-theme);
-  font-size: var(--ff-titles);
+  font-family: var(--ff-titles);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 79rem;
+  width: 8rem;
 }
 
-.turmaH1 {
-  margin-top: 0.3rem;
-}
-
-.turmaH2Cards {
-  margin-top: 0.1rem;
-}
-
-.divCentralizaConteudo {
-  display: flex;
-  justify-content: center;
-  align-content: center;
+.turmaH1, .turmaH2Cards {
+  margin-top: 1rem;
 }
 
 footer {
-  background-color: var(--bg-secondary);
-  height: 0.3rem;
-  width: 100%;
   position: fixed;
   bottom: 0;
-}
-
-.creditosCaixa {
+  background-color: var(--bg-secondary);
+  height: 3rem;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.footerCreditos {
+  text-align: center;
   font-size: var(--ff-titles);
   color: var(--text-color);
+  
+}
+
+footer p {
+  margin-top: 1rem;
 }

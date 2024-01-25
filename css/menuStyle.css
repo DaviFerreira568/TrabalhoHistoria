@@ -16,28 +16,24 @@
   .menu {
 	width: 0;
 	background-color: #172131;
-	height: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	overflow-x: hidden;
 	transition:  0.5s;
 	font-family: "Poppins";
   }
-  
+
+
   .menu li {
 	padding: 1rem;
 	font-size: 2rem;
   }
   
   #ativar-botao {
-	height: 4.8rem;
+	height: 3.8rem;
 	width: auto;
 	transition: 0.5s;
   }
   
   #ativar-botao:hover {
-	transform: scale(1.1);
+	opacity: 0.6;
   }
   
   .menu a {
@@ -50,11 +46,7 @@
   .menu li:hover {
 	background-color: #474747;
   }
-  
-  #paginaInicial {
-	margin-top: 7rem;
-  }
-  
+
   .menuAberto {
 	width: 27rem; /* Manter valores iguais ao da classe centralizado */
   } 

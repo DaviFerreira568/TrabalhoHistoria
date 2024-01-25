@@ -12,144 +12,114 @@
 </head>
 
 <body>
-    <!--Menu-->
-    <div class="menu-ativar"><!--a imagem do botao-->
-        <img src="../../../imagens/menu.png" alt="" id="ativar-botao">
+    <!-- Menu -->
+    <div class="menu-ativar">
+        <img src="../../../imagens/menu.png" id="ativar-botao">
     </div>
-    <div class="menu">
+
+    <!-- Conteúdo -->
+    <header>
+        <p class="linkTituloPagina">Ditadura Militar</p>
+        <img src="../../../imagens/setaVoltar.png" onclick="redirecionar('../paginaInicialSemArte.html')" alt="Seta Voltar Página" class="botaoVoltarProxima botaoVoltar">
+        <img src="../../../imagens/setaProximo.png" onclick="redirecionar('../getulioVargas/getulioVargas.html')" alt="Seta Próxima Página" class="botaoVoltarProxima botaoProxima">
+    </header>   
+     <div class="menu">
         <ul type="square">
-            <li id="paginaInicial"><a href="../paginaInicialSemArte.html">
-                    <p class="">Página Inicial</p>
-                </a></li>
+            <li><a href="../paginaInicialSemArte.html">Página Inicial</a></li>
             <hr>
-            <li><a href="../ditaduraMilitar/ditaduraMilitar.html">
-                    <p class="paginaAtual">Ditadura Militar</p>
-                </a></li>
+            <li><a href="../ditaduraMilitar/ditaduraMilitar.html">Ditadura Militar</a></li>
             <hr>
-            <li><a href="../getulioVargas/getulioVargasSemFlecha.html">
-                    <p class="">Getúlio Vargas</p>
-                </a></li>
+            <li><a href="../getulioVargas/getulioVargasSemFlecha.html">Getúlio Vargas</a></li>
             <hr>
-            <li><a href="../guerraFria/guerraFriaSemFlecha.html">
-                    <p class="">Guerra Fria</p>
-                </a></li>
+            <li><a href="../guerraFria/guerraFriaSemFlecha.html">Guerra Fria</a></li>
             <hr>
-            <li><a href="../outros/outros.html">
-                    <p class="">Outros</p>
-                </a></li>
-            <hr>
+            <li><a href="../outros/outros.html">Outros</a></li>
         </ul>
     </div>
-    <!--Conteudo-->
-    <header>
-        <h1 class="tituloPagina conteudoItem"><a href="../paginaInicialSemArte.html"
-                class="linkTituloPagina">HISTÓRIA</a></h1>
-        <a href="../paginaInicialSemArte.html"><img src="../../../imagens/setaVoltar.png" alt="Seta Voltar Página"
-                class="botaoVoltarProxima botaoVoltar"></a>
-        <a href="../getulioVargas/getulioVargas.html"><img src="../../../imagens/setaProximo.png"
-                alt="Seta Próxima Página" class="botaoVoltarProxima botaoProxima"></a>
-    </header>
     <main>
-        <br>
-        <h2 class="temaDaPagina conteudoItem">Ditadura Militar</h2>
-        <h1 class="turmaH1 conteudoItem">2ADM-B</h1>
-        <!--Caixa  CARD-->
-        <div class="container">      
-                <!--CARD 1-->
-                <div class="card" onclick="redirecionar('annaCarolinaGonzaga/annaCarolinaGonzaga.html')">
-                    <img src="annaCarolinaGonzaga/cardImage.jpg" class="imagemDoCard"><br>
-                    <p class="nomeNoCard primeiroNome">Anna Carolina Gonzaga</p>
-                </div>
-                <!--CARD 2-->
-                <div class="card" onclick="redirecionar('rayssaeMariaFernandes/rayssaeMariaFernandes.html')">
-                    <img src="rayssaeMariaFernandes/cardImage.jpg" class="imagemDoCard"><br>
-                    <p class="nomeNoCard primeiroNome">Maria</p>
-                    <p class="nomeNoCard">&</p>
-                    <p class="nomeNoCard">Rayssa</p>
-                </div>
-                <!--CARD 3-->
-                <div class="card" onclick="redirecionar('anaOlivia/anaOlivia.html')">
-                    <img src="anaOlivia/cardImage.jpg" class="imagemDoCard"><br>
-                    <p class="nomeNoCard primeiroNome">Ana Olivia </p>
-                    <p class="nomeNoCard">Luiza Ferreira</p>
-                    <p class="nomeNoCard">Maria Eduarda</p>
-                    <p class="nomeNoCard">Mycaella Farias</p>
-                    <p class="nomeNoCard">Kauane Garcia</p>
-                </div>
-                <!--CARD 4-->
-                <div class="card" onclick="redirecionar('mariaEduarda/mariaEduarda.html')">
-                    <img src="mariaEduarda/cardImage.jpg" class="imagemDoCard">
-                    <br>
-                    <p class="nomeNoCard primeiroNome">Maria Eduarda</p>
-                </div>
+
+        <h1 class="turmaH1">2ADM-B</h1>
+        <div class="container">
+            <div class="container_item" onclick="redirecionar('annaCarolinaGonzaga/annaCarolinaGonzaga.html')">
+                <img src="annaCarolinaGonzaga/cardImage.jpg">
+                <p class="nomeNoCard primeiroNome">Anna Carolina Gonzaga</p>
+            </div>
+
+            <div class="container_item" onclick="redirecionar('rayssaeMariaFernandes/cardImage.jpg')">
+                <img src="rayssaeMariaFernandes/cardImage.jpg">
+                <p class="nomeNoCard primeiroNome">Maria & Rayssa</p>
+            </div>
+
+            <div class="container_item" onclick="redirecionar('anaOlivia/anaOlivia.html')">
+                <img src="anaOlivia/cardImage.jpg">
+                <p>Ana Olivia</p>
+                <p>Luiza Ferreira</p>
+                <p>Maria Eduarda</p>
+                <p>Mycaella Farias</p>
+                <p>Kauane Garcia</p>
+            </div>
+
+            <div class="container_item" onclick="redirecionar('mariaEduarda/mariaEduarda.html')">
+                <img src="mariaEduarda/cardImage.jpg">
+                <p>Maria Eduarda</p>
+            </div>
+
         </div>
-        <!--Caixa  CARD-->
-        <div class="">
-            <div class="">
-                <!--CARD 1-->
-                    <div class="card" onclick="redirecionar('lucasKaua/lucasKaua.html')">
-                        <img src="lucasKaua/cardImage.png" class="imagemDoCard"><br>
-                        <p class="nomeNoCard primeiroNome">Douglas Alonso</p>
-                        <p class="nomeNoCard">João Vitor</p>
-                        <p class="nomeNoCard">Lucas Kauã</p>
-                        <p class="nomeNoCard">Mayron</p>
-                        <p class="nomeNoCard">Ryan</p>
-                    </div>
-                <!--CARD 2-->
-                    <div class="card" onclick="redirecionar('adriano/adriano.html')">
-                        <img src="adriano/cardImage.jpg" class="imagemDoCard"><br>
-                        <p class="nomeNoCard primeiroNome">Adriano S.R</p>
-                        <p class="nomeNoCard">Maryane Vitória</p>
-                        <p class="nomeNoCard">Katrine</p>
-                    </div>
+
+        <div class="container ultimo_container">
+            <div class="container_item" onclick="redirecionar('lucasKaua/lucasKaua.html')">
+                <img src="lucasKaua/cardImage.png">
+                <p>Douglas Alonso</p>
+                <p>João Vitor</p>
+                <p>Lucas Kauã</p>
+                <p>Mayron</p>
+                <p>Ryan</p>
+            </div>
+
+            <div class="container_item" onclick="redirecionar('adriano/adriano.html')">
+                <img src="adriano/cardImage.jpg">
+                <p>Adriano S.R</p>
+                <p>Maryane Vitória</p>
+                <p>Katrine</p>
             </div>
         </div>
-        <h1 class="turmaH1 conteudoItem">2DS-C</h1>
-        <!--Caixa  CARD-->
-        <div class="">
-            <div class="">
-                <!--CARD 1-->
-                    <div class="card" onclick="redirecionar('jean/jean.html')">
-                        <img src="jean/cardImage.jpg" class="imagemDoCard"><br>
-                        <p class="nomeNoCard primeiroNome">Jean</p>
-                        <p class="nomeNoCard">&</p>
-                        <p class="nomeNoCard">Murilo</p>
-                    </div>
-                <!--CARD 2-->
-                    <div class="card" onclick="redirecionar('joaoPedro/joaoPedro.html')">
-                        <img src="joaoPedro/cardImage.jpg" class="imagemDoCard"><br>
-                        <p class="nomeNoCard primeiroNome">Caio Vinicius</p>
-                        <p class="nomeNoCard">Davi Ferreira</p>
-                        <p class="nomeNoCard">João Pedro</p>
-                        <p class="nomeNoCard">Juan Enzo</p>
-                        <p class="nomeNoCard">Leonardo Silva</p>
-                    </div>
-                <!--CARD 3-->
-                    <div class="card" onclick="redirecionar('jenifher/jenifher.html')">
-                        <img src="jenifher/cardImage.jpeg" class="imagemDoCard"><br>
-                        <p class="nomeNoCard primeiroNome">Débora dos Santos</p>
-                        <p class="nomeNoCard">Jenifher Vaz</p>
-                        <p class="nomeNoCard">Nathanael</p>
-                    </div>
-                <!--CARD 4-->
-                    <div class="card" onclick="redirecionar('gustavo/gustavo.html')">
-                        <img src="gustavo/cardImage.jpg" class="imagemDoCard"><br>
-                        <p class="nomeNoCard primeiroNome">Guilherme</p>
-                        <p class="nomeNoCard">Gustavo</p>
-                        <p class="nomeNoCard">Nathaly</p>
-                    </div>
+
+
+        <h1 class="turmaH1">2DS-C</h1>
+        <div class="container ">
+
+            <div class="container_item" onclick="redirecionar('jean/jean.html')">
+                <img src="jean/cardImage.jpg">
+                <p>Jean & Murilo</p>
+            </div>
+            <div class="container_item" onclick="redirecionar('joaoPedro/joaoPedro.html')">
+                <img src="joaoPedro/cardImage.jpg">
+                <p>Caio Vinicius</p>
+                <p>Davi Ferreira</p>
+                <p>João Pedro</p>
+                <p>Juan Enzo</p>
+                <p>Leonardo Silva</p>
+            </div>
+            <div class="container_item" onclick="redirecionar('jenifher/jenifher.html')">
+                <img src="jenifher/cardImage.jpeg">
+                <p>Débora dos Santos</p>
+                <p>Jenifher Vaz</p>
+                <p>Nathanael</p>
+            </div>
+            <div class="container_item" onclick="redirecionar('gustavo/gustavo.html')">
+                <img src="gustavo/cardImage.jpg">
+                <p>Guilherme</p>
+                <p>Gustavo</p>
+                <p>Nathaly</p>
             </div>
         </div>
 
     </main>
-    <footer>
-        <div class="creditosCaixa">
-            <p class="footerCreditos conteudoItem">Desenvolvedor: StDoguinho </p>
-        </div>
+    <footer>  
+        <p>Desenvolvedor: StDoguinho </p>
     </footer>
-    <!-------->
-    <script src="../../../javaScript/menuJava.js"></script>
     <script src="../../../javaScript/redirecionar.js"></script>
+    <script src="../../../javaScript/menuJava.js"></script>
 </body>
 
 </html>
