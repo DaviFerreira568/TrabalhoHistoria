@@ -24,10 +24,13 @@ body {
 
 header {
   background-color: var(--bg-secondary);
-  height: 10rem;
+  width: 100%;
+  height: 6rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  top: 0;
 }
 
 #imagemFantasma {
@@ -63,22 +66,20 @@ header {
 }
 
 .botaoProxima {
-  margin-top: 4rem;
+  margin-top: 0.5rem;
   margin-right: 7rem;
 }
 
 .botaoVoltar {
-  margin-top: 4rem;
-  margin-left: 7rem;
-  position: fixed;
-  left: 0;
-  top: 0;
+  margin-top: 0.5rem;
+  margin-right:15rem;
 }
 
 main {
   background-color: var(--bg-primary);
   height: 8.7rem;
   max-width: 33rem;
+  margin-top: 15rem;
 }
 
 .temaDaPagina,
@@ -88,7 +89,8 @@ main {
   font-family: var(--ff-titles);
   font-size: 2rem;
   font-weight: bold;
-  margin-left: 79rem;
+  margin-left: 87rem;
+
   width: 8rem;
 }
 

@@ -1,106 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='../../../imagens/iconHistoria.png' rel='icon' type='image/x-icon' />
-        <title>História - Getúlio Vargas</title>
-        <link rel="stylesheet" href="../../../css/menuStyle.css">
-        <link rel="stylesheet" href="../../../css/style.css">
-        <link rel="stylesheet" href="../../../css/cardsStyle.css">
-    </head>
-    <body>
-        <!--Menu-->
-        <div class="menu-ativar"><!--a imagem do botao-->
-            <img src="../../../imagens/menu.png" alt="" id="ativar-botao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='../../../imagens/iconHistoria.png' rel='icon' type='image/x-icon' />
+    <title>História - Getúlio Vargas</title>
+    <link rel="stylesheet" href="../../../css/menuStyle.css">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/cardsStyle.css">
+</head>
+
+<body>
+    <!-- Menu -->
+    <div class="menu-ativar">
+        <img src="../../../imagens/menu.png" alt="" id="ativar-botao">
+    </div>
+    <div class="menu">
+        <ul type="square">
+            <li onclick="redirecionar('../paginaInicial.html')">Página Inicial</li><hr>
+            <li onclick="redirecionar('../ditaduraMilitar/ditaduraMilitar.html')">Ditadura Militar</li><hr>
+            <li onclick="redirecionar('../getulioVargas/getulioVargas.html')">Getúlio Vargas</li><hr>
+            <li onclick="redirecionar('../guerraFria/guerraFria.html')"> Guerra Fria</li><hr>
+            <li onclick="redirecionar('../outros/outros.html')">Outros</li>
+        </ul>
+    </div>
+    <!-- Conteúdo -->
+    <header>
+        <p class="linkTituloPagina">Getúlio Vargas</p>
+        <img src="../../../imagens/setaVoltar.png" onclick="redirecionar('../ditaduraMilitar/ditaduraMilitar.html')" alt="Seta Voltar Página" class="botaoVoltarProxima botaoVoltar">
+        <img src="../../../imagens/setaProximo.png" onclick="redirecionar('../guerraFria/guerraFria.html')" alt="Seta Próxima Página" class="botaoVoltarProxima botaoProxima">
+    </header>
+    <main> 
+
+        <h1 class="turmaH1">2ADM-B</h1>
+        <!-- Caixa CARD -->
+        <div class="container conteudoItem">
+            <div class="container_item" style="margin-left: 38rem;" onclick="redirecionar('yael/yael.html')">
+                <img src="yael/cardImage.jpg" class="imagemDoCard">
+                <p>Ana Alice</p>
+                <p>Marya Isabella</p>
+                <p>Millena Vam</p>
+                <p>Yael</p>
+            </div>
         </div>
-		<div class="menu">
-			<ul type="square">
-				<li id="paginaInicial"><a href="../paginaInicialSemArte.html"><p class="">Página Inicial</p></a></li>
-				<hr>
-				<li><a href="../ditaduraMilitar/ditaduraMilitarSemFlecha.html"><p class="">Ditadura Militar</p></a></li>
-				<hr>
-				<li><a href="../getulioVargas/getulioVargas.html"><p class="paginaAtual">Getúlio Vargas</p></a></li>
-				<hr>
-				<li><a href="../guerraFria/guerraFriaSemFlecha.html"><p class="">Guerra Fria</p></a></li>
-				<hr>
-                <li><a href="../outros/outros.html"><p class="">Outros</p></a></li>
-				<hr>
-			</ul>
-		</div>
-        <!--Conteudo-->
-        <header>
-            <h1 class="tituloPagina conteudoItem"><a href="../paginaInicialSemArte.html" class="linkTituloPagina">HISTÓRIA</a></h1>
+        <h1 class="turmaH1">2DS-C</h1>
+        <!-- Caixa CARD -->
+        <div class="container" style="margin-left: 43rem;">
+            <div class="container_item"  onclick="redirecionar('gabrielMonteiro/gabrielMonteiro.html')">
+                <img src="gabrielMonteiro/cardImage.jpeg" class="imagemDoCard">
+                <p>Gabriel Amaral</p>
+                <p >Gabriel M. Martins</p>
+                <p>Mariana Polo</p>
+                <p>Yasmin da Rocha</p>
+            </div>
+            <div class="container_item" onclick="redirecionar('george/george.html')">
+                <img src="george/cardImage.jpeg" class="imagemDoCard">
+                <p>Davi de Paula</p>
+                <p>George Henrique</p>
+                <p>João Vitor</p>
+            </div>
+            <div class="container_item" onclick="redirecionar('mariaClara/mariaClara.html')">
+                <img src="mariaClara/cardImage.jpg" class="imagemDoCard">
+                <p>Bianca</p>
+                <p>Maria Clara</p>
+                <p>Kerollyn</p>
+            </div>
+        </div>
 
-            <a href="../ditaduraMilitar/ditaduraMilitar.html"><img src="../../../imagens/setaVoltar.png" alt="Seta Voltar Página" class="botaoVoltarProxima botaoVoltar"></a>
+    </main>
+    <footer>
+        <p>Desenvolvedor: StDoguinho </p>
+    </footer>
+    <!-------->
+    <script src="../../../javaScript/redirecionar.js"></script>
+    <script src="../../../javaScript/menuJava.js"></script>
+</body>
 
-            <a href="../guerraFria/guerraFria.html"><img src="../../../imagens/setaProximo.png" alt="Seta Próxima Página" class="botaoVoltarProxima botaoProxima"></a>
-        </header>
-        <main>
-            <br>
-            <h2 class="temaDaPagina conteudoItem">Getúlio Vargas</h2>
-            <h1 class="turmaH1 conteudoItem">2ADM-B</h1>
-            <!--Caixa  CARD-->
-            <div class="caixaDasCartas conteudoItem">
-                <div class="casaDosCards">
-                    <!--CARD 1-->
-                    <a href="yael/yael.html">
-                        <div class="card">
-                            <img src="yael/cardImage.jpg" class="imagemDoCard">
-                            <br>
-                            <p class="nomeNoCard primeiroNome">Ana Alice</p>
-                            <p class="nomeNoCard">Marya Isabella</p>
-                            <p class="nomeNoCard">Millena Vam</p>
-                            <p class="nomeNoCard">Yael</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <h1 class="turmaH1 conteudoItem">2DS-C</h1>
-            <!--Caixa  CARD-->
-            <div class="caixaDasCartas conteudoItem ">
-                <div class="casaDosCards ultimaCasa">
-                    <!--CARD 1-->
-                    <a href="gabrielMonteiro/gabrielMonteiro.html">
-                        <div class="card">
-                            <img src="gabrielMonteiro/cardImage.jpeg" class="imagemDoCard">
-                            <br>
-                            <p class="nomeNoCard primeiroNome">Gabriel Amaral</p>
-                            <p class="nomeNoCard">Gabriel M. Martins</p>
-                            <p class="nomeNoCard">Mariana Polo</p>
-                            <p class="nomeNoCard">Yasmin da Rocha</p>
-                        </div>
-                    </a>
-                    <!--CARD 2-->
-                    <a href="george/george.html">
-                        <div class="card">
-                            <img src="george/cardImage.jpeg" class="imagemDoCard">
-                            <br>
-                            <p class="nomeNoCard primeiroNome">Davi de Paula</p>
-                            <p class="nomeNoCard">George Henrique</p>
-                            <p class="nomeNoCard">João Vitor</p>
-                        </div>
-                    </a>
-                    <!--CARD 3-->
-                    <a href="mariaClara/mariaClara.html">
-                        <div class="card">
-                            <img src="mariaClara/cardImage.jpg" class="imagemDoCard">
-                            <br>
-                            <p class="nomeNoCard primeiroNome">Bianca</p>
-                            <p class="nomeNoCard">Maria Clara</p>
-                            <p class="nomeNoCard">Kerollyn</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            
-        </main>
-        <footer>
-            <div class="creditosCaixa">
-                <p class="footerCreditos conteudoItem">Desenvolvedor: StDoguinho </p>
-            </div>
-        </footer>
-        <!-------->
-        <script src="../../../javaScript/menuJava.js"></script>
-    </body>
 </html>

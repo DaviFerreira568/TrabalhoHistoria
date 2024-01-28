@@ -18,12 +18,18 @@
 	background-color: #172131;
 	transition:  0.5s;
 	font-family: "Poppins";
+	position: fixed;
+	margin-top: -9rem;
   }
 
 
   .menu li {
 	padding: 1rem;
 	font-size: 2rem;
+	color: #dbe2eb;
+	text-decoration: none;
+	display: block;
+	transition: 0.3s;
   }
   
   #ativar-botao {
@@ -36,19 +42,15 @@
 	opacity: 0.6;
   }
   
-  .menu a {
-	color: #dbe2eb;
-	text-decoration: none;
-	display: block;
-	transition: color 0.3s;
-  }
-  
   .menu li:hover {
 	background-color: #474747;
+
   }
 
   .menuAberto {
 	width: 27rem; /* Manter valores iguais ao da classe centralizado */
+	position: fixed;
+	margin-top: -9rem;
   } 
   
   .centralizado {
