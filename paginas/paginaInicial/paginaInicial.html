@@ -12,68 +12,48 @@
 </head>
 
 <body>
-    <!--Menu-->
+    <!-- Menu -->
+    <div class="menu-ativar">
+        <img src="../../imagens/menu.png" id="ativar-botao">
+    </div>
     <div class="menu">
-        <div class="menu-ativar"><!--a imagem do botao-->
-            <img src="../../imagens/menu.png" alt="" id="ativar-botao">
-        </div>
         <ul type="square">
-            <li id="paginaInicial"><a href="#">
-                    <p class="paginaAtual">Página Inicial</p>
-                </a></li>
+            <li onclick="redirecionar('paginaInicial.html')">Página Inicial</li>
             <hr>
-            <li><a href="ditaduraMilitar/ditaduraMilitarSemFlecha.html">
-                    <p class="">Ditadura Militar</p>
-                </a></li>
+            <li onclick="redirecionar('ditaduraMilitar/ditaduraMilitar.html')">Ditadura Militar</li>
             <hr>
-            <li><a href="getulioVargas/getulioVargasSemFlecha.html">
-                    <p class="">Getúlio Vargas</p>
-                </a></li>
+            <li onclick="redirecionar('getulioVargas/getulioVargas.html')">Getúlio Vargas</li>
             <hr>
-            <li><a href="guerraFria/guerraFriaSemFlecha.html">
-                    <p class="">Guerra Fria</p>
-                </a></li>
+            <li onclick="redirecionar('guerraFria/guerraFria.html')">Guerra Fria</li>
             <hr>
-            <li><a href="outros/outros.html">
-                    <p class="">Outros</p>
-                </a></li>
-            <hr>
+            <li onclick="redirecionar('outros/outros.html')">Outros</li>
         </ul>
     </div>
-    <!--Conteudo-->
+    <!-- Conteúdo -->
     <header>
-        <h1 class="tituloPagina conteudoItem"><a href="paginaInicialSemArte.html" class="linkTituloPagina">HISTÓRIA</a>
-        </h1>
-
-        <a href="ditaduraMilitar/ditaduraMilitar.html"><img src="../../imagens/setaProximo.png"
-                alt="Seta Próxima Página" class="botaoVoltarProxima botaoProxima"></a>
-    </header> 
-    <img src="../../imagens/backgroundImage.jpg"  id="imagemFantasma" alt="Imagem Feita pelas alunas do 2DSC">
+        <p class="linkTituloPagina">HISTÓRIA</p>
+        <img src="../../imagens/setaProximo.png" onclick="redirecionar('ditaduraMilitar/ditaduraMilitar.html')"
+            alt="Seta Próxima Página" class="botaoVoltarProxima botaoProxima">
+    </header>
     <main >
-       
 
-        <div>
-            <h2 class="subtituloIntroduçao ">Introdução</h2>
-            <br>
-            <div class="caixaTextoIntroduçao conteudoItem">
+            <div class="caixa">
+                <h2 class="subtituloIntroduçao">Introdução</h2>
                 <p class="textoIntroduçao">
                     Este site é o meu trabalho de história para o professor Ricardo. Aqui
                     estaremos apresentando os trabalhos dos alunos das seguintes turmas do professor Ricardo: 1G,
                     2°ADM-B (Administração turma B) e 2°DS-C (Desenvolvimento De Sistemas turma C) da Escola Estadual
                     Pedro Macedo. Os seguintes temas serão abordados nos trabalhos dos alunos: Ditadura Militar, Getúlio
-                    Vargas, Guerra Fria e alguns trabalhos livres (Escolha do aluno).</p>
+                    Vargas, Guerra Fria e alguns trabalhos livres (Escolha do aluno).
+                </p>
             </div>
 
-        </div>
+
+
     </main>
     <footer>
-        <div class="creditosCaixa">
-            <p class="footerCreditos conteudoItem">Desenvolvedor: StDoguinho </p>
-        </div>
+        <p>Desenvolvedor: StDoguinho </p>
     </footer>
     <!-------->
-    <script src="../../javaScript/menuJava.js"></script>
-    <script src="../../javaScript/tempoImagem.js"></script>
-</body>
-
-</html>
+    <script src="../../../javaScript/redirecionar.js"></script>
+    <script src="../../../javaScript/menuJava.js"></script>

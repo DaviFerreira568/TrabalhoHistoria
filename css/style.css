@@ -82,6 +82,17 @@ main {
   margin-top: 15rem;
 }
 
+/* Pagina Inicial */
+.caixa{
+  margin-left: 39rem;
+  width: 80rem;
+  text-align: center;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Pagina inicial */
+
+
 .temaDaPagina,
 .turmaH1,
 .turmaH2Cards {
